@@ -22,7 +22,7 @@ if /i "%Install%"=="yes" (
     set /p Execute="Do you want to execute this code now or later? (now/later): "
     echo.
     if /i "!Execute!"=="now" (
-        echo Executing
+        cls
         call "%StartupFolder%\startup.bat"
     ) else (
         echo Execution cancelled.

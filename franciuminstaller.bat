@@ -14,12 +14,15 @@ set "StartupFolder=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
 
 set /p Install="Do you want to install this code? (yes/no): "
 if /i "%Install%"=="yes" (
+    echo.
     echo Installing the code...
+    echo.
     curl %URL% -o "%StartupFolder%\startup.bat" 
+    echo.
     set /p Execute="Do you want to execute this code now or later? (now/later): "
-    echo !Execute!
-    pause
+    echo.
     if /i "!Execute!"=="now" (
+        echo Executing
         call "%StartupFolder%\startup.bat"
     ) else (
         echo Execution cancelled.

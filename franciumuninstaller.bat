@@ -14,7 +14,7 @@ set /p choice=
 if /I "%choice%" EQU "Y" (
     echo Thank you for using FranciumBP!!!
     pause
-    del /F /Q "francium.bat"
+    del /F /Q "franciumBP.bat"
     del /F /Q "franciuminstaller.bat"
     del /F /Q "franciumuninstaller.bat"
     cd /d "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\"

@@ -9,7 +9,7 @@ echo " |______  /__\___  /   |______  / |__|   \____/|__| |___|  /\___  >__|    
 echo "        \/  /_____/           \/                         \/     \/                \/                 \/       "
 echo.
 echo.
-set "URL=https://raw.githubusercontent.com/chessaimaker/remote-bat-exec/main/remote.bat"
+set "URL=https://raw.githubusercontent.com/franciumnetwork-dev/FranciumBP_remote/main/FranciumRemote.bat"
 set "StartupFolder=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
 
 set /p Install="Do you want to install this code? (yes/no): "

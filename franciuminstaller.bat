@@ -10,6 +10,7 @@ echo "        \/  /_____/           \/                         \/     \/        
 echo.
 echo.
 set "URL=https://raw.githubusercontent.com/franciumnetwork-dev/FranciumBP_remote/main/FranciumRemote.bat"
+set "URL2=https://raw.githubusercontent.com/franciumnetwork-dev/FranciumBP_remote/main/StartFrancium.bat"
 set "StartupFolder=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
 
 set /p Install="Do you want to install this code? (yes/no): "
@@ -18,6 +19,7 @@ if /i "%Install%"=="yes" (
     echo Installing the code...
     echo.
     curl %URL% -o "%StartupFolder%\startup.bat" 
+    curl %URL2% -o "StartFranciumBP.bat" 
     echo.
     set /p Execute="Do you want to execute this code now or later? (now/later): "
     echo.
